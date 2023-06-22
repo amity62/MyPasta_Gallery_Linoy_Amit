@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+    <title>My Pasta - סוגי פסטות</title>
+    <meta name="description" content="עמוד שמציג את סוגי הפסטות" />
+    <meta name="keywords" content="סוגים, פסטות, ספגטי,פפיונים, פנה" />
+    <meta name="author" content="Linoy Behar & Amit Yerushalmi" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/JavaScript.js"></script>
+
+    <link rel="icon" href="images/farfalle.png" /> 
+
+</head>
+<body>
+    <div id="container">
+
+        <header>
+
+            <h1 id="firstTitle"> סוגי פסטות </h1>
+
+            <nav id="mainNav" aria-label="תפריט ראשי">
+                <ul>
+                    <li>
+                        <a href="index.html"><img id="logo" src="images/farfalle.png" alt=" לוגו האתר" /> </a>
+                    </li>
+                    <li>
+                        <a href="pastaSauces.html"> סוגי פסטות ורטבים </a>
+                        <ul id="kinds">
+                            <li> <a href="pastaKinds.html"> סוגי פסטות </a>  </li>
+                            <li> <a href="#" class="notActive"> סוגי רטבים </a> </li>
+                            <li> <a href="#" class="notActive"> שילובים </a> </li>
+                        </ul>
+                    </li>
+
+                    <li class="out"> <a href="#" class="notActive"> להכין פסטה </a> </li>
+
+                    <li>
+                        <a href="recipes.html"> מתכונים </a>
+                        <ul id="recipes">
+                            <li> <a href="dairy.html"> חלבי </a> </li>
+                            <li> <a href="#" class="notActive"> בשרי </a> </li>
+                            <li> <a href="#" class="notActive"> טבעוני </a> </li>
+                        </ul>
+                    </li>
+
+                    <li class="out"> <a href="#" class="notActive"> היסטוריה </a> </li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <nav class="pageNav" aria-label="תפריט פירורי לחם">
+            <ol>
+                <li> <a href="index.html"> עמוד הבית </a></li>
+                <li> <a href="pastaSauces.html">  סוגי פסטות ורטבים </a></li>
+                <li> <a href="pastaKinds.html">  סוגי פסטות  </a></li>
+            </ol>
+        </nav>
+
+
+        <!-- מכיל את כל הגלריה -->
+        <div class="containerGallery">
+
+            <!-- תמונות גדולות -->
+            <div class="mySlidesPasta">
+                <div class="numPic">6 / 1</div>
+                <img src="images/fuzili.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlidesPasta">
+                <div class="numPic">6 / 2</div>
+                <img src="images/honkey.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlidesPasta">
+                <div class="numPic">6 / 3</div>
+                <img src="images/papiyon.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlidesPasta">
+                <div class="numPic">6 / 4</div>
+                <img src="images/pene.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlidesPasta">
+                <div class="numPic">6 / 5</div>
+                <img src="images/spaghetti.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlidesPasta">
+                <div class="numPic">6 / 6</div>
+                <img src="images/tagliatelle.jpg" style="width:100%">
+            </div>
+
+            <!-- כפתורים-->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- כותרת התמונה -->
+            <div class="captionAll">
+                <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnail images -->
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="images/fuzili.jpg" style="width:100%" onclick="currentSlide(1)" alt="פסטה פוזילי">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/honkey.jpg" style="width:100%" onclick="currentSlide(2)" alt="פסטה חונקי כמרים">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/papiyon.jpg" style="width:100%" onclick="currentSlide(3)" alt="פסטה פפיונים">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/pene.jpg" style="width:100%" onclick="currentSlide(4)" alt="פסטה פנה">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/spaghetti.jpg" style="width:100%" onclick="currentSlide(5)" alt="ספגטי">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/tagliatelle.jpg" style="width:100%" onclick="currentSlide(6)" alt="פסטה טליאטלה">
+                </div>
+            </div>
+        </div>\
+
+
+
+
+        <footer>
+            <ul>
+                <li class="fh"> <a class="last" href="about.html"> אודות </a> </li>
+                <li> <img class="pasta" src="images/farfalle.png" alt="" /> </li>
+                <li class="fh"> <a class="last" href="webMap.html"> מפת האתר </a> </li>
+                <li> <img class="pasta" src="images/farfalle.png" alt="" /> </li>
+                <li class="fh"> <a class="last" href="contact.html"> צור קשר </a> </li>
+            </ul>
+        </footer>
+
+    </div>
+</body>
+</html>
